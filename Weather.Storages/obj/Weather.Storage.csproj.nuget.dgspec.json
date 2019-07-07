@@ -1,0 +1,243 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Storages\\Weather.Storage.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj",
+        "projectName": "Weather.Contracts",
+        "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj",
+        "packagesPath": "C:\\Users\\durnev\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\durnev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.kontur/api/v2": {},
+          "http://vm-wic-dev.kontur:81/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj",
+        "projectName": "Weather.Interfaces",
+        "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\durnev\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\durnev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.kontur/api/v2": {},
+          "http://vm-wic-dev.kontur:81/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj": {
+                "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\Weather.Context.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\Weather.Context.csproj",
+        "projectName": "Weather.Context",
+        "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\Weather.Context.csproj",
+        "packagesPath": "C:\\Users\\durnev\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\durnev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.kontur/api/v2": {},
+          "http://vm-wic-dev.kontur:81/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj": {
+                "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Contracts\\Weather.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Storages\\Weather.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Storages\\Weather.Storage.csproj",
+        "projectName": "Weather.Storage",
+        "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Storages\\Weather.Storage.csproj",
+        "packagesPath": "C:\\Users\\durnev\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Storages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\durnev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.kontur/api/v2": {},
+          "http://vm-wic-dev.kontur:81/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj": {
+                "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj"
+              },
+              "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\Weather.Context.csproj": {
+                "projectPath": "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Models\\Weather.Context.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
