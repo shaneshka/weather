@@ -15,3 +15,5 @@
 - покрытие тестами логики
 
 ## Решение
+
+предлагается скачать архив https://github.com/shaneshka/weather/blob/master/weather.rar и запустить .exe
