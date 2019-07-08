@@ -48,7 +48,7 @@ namespace Weather.HttpClient
 
         class WeatherMain
         {
-            public string Temp { get; set; }
+            public double Temp { get; set; }
         }
     }
 }
