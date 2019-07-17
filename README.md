@@ -17,3 +17,5 @@
 ## Решение
 
 предлагается скачать архив https://github.com/shaneshka/weather/blob/master/weather.rar и запустить .exe
+- Api - /api/SampleData/WeatherForecasts?name=London
+- UI - /fetch-data
