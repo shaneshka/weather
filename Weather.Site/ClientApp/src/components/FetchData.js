@@ -7,7 +7,12 @@ export class FetchData extends Component {
     super(props);
     this.state = { forecasts: [], loading: true };
 
-    fetch('api/SampleData/WeatherForecasts?name=London')
+    /*var params = window
+        .location
+        .search
+        .replace('?', '');
+        */
+      fetch('api/SampleData/WeatherForecasts')//(params[1]||"")
       .then(response => response.json())
       .then(data => {
         this.setState({ forecasts: data, loading: false });

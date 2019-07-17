@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Weather.Contracts;
 using Weather.Interfaces;
@@ -23,15 +24,20 @@ namespace Weather.Domain
 
         public async Task<WeatherTown> GetAsync(TownRequest town)
         {
-            var weatherTown = await _weatherStorage.GetAsync(town.Name);
+            var weatherTown = _weatherStorage.Get(town.Name);
             if (weatherTown == null)
             {
                 weatherTown = await GetWeather(town);
 
-                await _weatherStorage.CreateAsync(weatherTown);
+                _weatherStorage.Create(weatherTown);
             }
 
             return weatherTown;
+        }
+
+        public IEnumerable<WeatherTown> GetAll()
+        {
+            return _weatherStorage.GetAll();
         }
 
         private async Task<WeatherTown> GetWeather(TownRequest town)

@@ -8,9 +8,9 @@ namespace Weather.Interfaces
 {
     public interface IWeatherStorage
     {
-        Task<WeatherTown> GetAsync(string name);
-        Task<WeatherTown> CreateAsync(WeatherTown weatherTown);
-        Task<WeatherTown> UpdateAsync(WeatherTown weatherTown);
-        Task<IEnumerable<WeatherTown>> GetAllAsync();
+        WeatherTown Get(string name);
+        WeatherTown Create(WeatherTown weatherTown);
+        WeatherTown Update(WeatherTown weatherTown);
+        IEnumerable<WeatherTown> GetAll();
     }
 }

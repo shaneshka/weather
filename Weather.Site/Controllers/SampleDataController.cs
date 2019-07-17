@@ -24,20 +24,18 @@ namespace Weather.UI2.Controllers
         {
             if (town == null || string.IsNullOrEmpty(town.Name))
             {
-                throw new Exception("укажиите город");
+                return _dataProvider.GetAll()?.Select(x => x.ToForecast());
+                //throw new Exception("укажиите город");
             }
 
             try
             {
-                var weatherTown = await _dataProvider.GetAsync(town);
+                var weather = await _dataProvider.GetAsync(town);
 
-                return new[]
+                return new WeatherForecast[]
                 {
-                    new WeatherForecast
-                    {
-                        Name = weatherTown.Name,
-                        TemperatureF = weatherTown.Temp
-                    }
+                    weather.ToForecast()
+
                 };
             }
             catch (WeatherException ex)

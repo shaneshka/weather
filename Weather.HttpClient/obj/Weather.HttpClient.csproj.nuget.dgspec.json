@@ -57,6 +57,11 @@
           "assetTargetFallback": true,
           "warn": true
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
     "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Errors\\Weather.Errors.csproj": {
@@ -111,6 +116,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
@@ -182,6 +192,11 @@
           "assetTargetFallback": true,
           "warn": true
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
     "C:\\Projects\\xxx\\tochka\\WeatherGit\\weather\\Weather.Interfaces\\Weather.Interfaces.csproj": {
@@ -240,6 +255,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

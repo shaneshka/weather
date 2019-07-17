@@ -11,14 +11,27 @@ namespace Weather.Storage
     {
 
         private ConcurrentDictionary<string, WeatherTown> _weathers = new ConcurrentDictionary<string, WeatherTown>();
-        
-        public async Task<WeatherTown> GetAsync(string name)
+
+        public WeatherStorage()
+        {
+            Init();
+        }
+
+        private void Init()
+        {
+            Create(new WeatherTown
+            {
+                Name = "London"
+            });
+        }
+
+        public WeatherTown Get(string name)
         {
             _weathers.TryGetValue(name, out WeatherTown weatherTown);
             return weatherTown;
         }
 
-        public async Task<WeatherTown> CreateAsync(WeatherTown town)
+        public WeatherTown Create(WeatherTown town)
         {
             if (!_weathers.TryGetValue(town.Name, out WeatherTown weatherTown))
             {
@@ -29,7 +42,7 @@ namespace Weather.Storage
             return weatherTown;
         }
 
-        public async Task<WeatherTown> UpdateAsync(WeatherTown town)
+        public WeatherTown Update(WeatherTown town)
         {
             if (_weathers.TryGetValue(town.Name, out WeatherTown weatherTown))
             {
@@ -39,9 +52,9 @@ namespace Weather.Storage
             return weatherTown;
         }
 
-        public async Task<IEnumerable<WeatherTown>> GetAllAsync()
+        public IEnumerable<WeatherTown> GetAll()
         {
-            return _weathers.Values.ToArray();
+            return _weathers.Values;
         }
     }
 }

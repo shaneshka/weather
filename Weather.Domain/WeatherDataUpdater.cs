@@ -33,14 +33,14 @@ namespace Weather.Domain
 
         private async void DataUpdateAsync(object state)
         {
-            var weatherTowns = await _weatherStorage.GetAllAsync();
+            var weatherTowns = _weatherStorage.GetAll();
 
             foreach (var weatherTown in weatherTowns)
             {
                 var weather = await _httpClient.GetAsync(weatherTown.Name);
                 weatherTown.Temp = weather.Temp;
 
-                await _weatherStorage.UpdateAsync(weatherTown);
+                _weatherStorage.Update(weatherTown);
                 
             }
         }

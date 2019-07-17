@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Weather.Api\Weather.Api.csproj" />
     <ProjectReference Include="..\Weather.Domain\Weather.Domain.csproj" />
     <ProjectReference Include="..\Weather.HttpClient\Weather.HttpClient.csproj" />
     <ProjectReference Include="..\Weather.Settings\Weather.Settings.csproj" />

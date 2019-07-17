@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Weather.Interfaces\Weather.Interfaces.csproj" />
-    <ProjectReference Include="..\Weather.Models\Weather.Context.csproj" />
   </ItemGroup>
 
   <ItemGroup>
